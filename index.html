@@ -41,8 +41,9 @@
                     I'm <span class="highlight">Ma. Janelle Anne</span> <br> Aspiring IT Professional
                 </h1>
                 <div class="hero-buttons" data-aos="fade-right" data-aos-delay="200" data-aos-easing="ease-in-out" data-aos-duration="700">
-                    <button class="btn primary-btn">Hire Me</button>
-                    <button class="btn secondary-btn">See Portfolio</button>
+                    <a href="mailto:tamormc@students.nu-moa.edu.ph" class="btn primary-btn">Hire Me</a>
+
+                    <a href="#projects" class="btn secondary-btn">See Portfolio</a>
                 </div>
                 <p class="hero-description" data-aos="fade-right" data-aos-delay="300" data-aos-easing="ease-in-out" data-aos-duration="600">
                     I am exploring different areas within Information Technology to grow and contribute meaningfully in the tech industry.
@@ -167,134 +168,180 @@
         <div class="section-divider-wavy" data-aos="fade-down" data-aos-duration="800" data-aos-delay="600"></div>
 
         <section id="projects" class="section projects-section" data-aos="fade-up">
-    <h2 class="section-title">My Projects</h2>
-    <p class="section-description">
-        Here are some of my projects.
-    </p>
+            <h2 class="section-title">My Projects</h2>
+            <p class="section-description">
+                Here are some of my projects.
+            </p>
 
-    <div class="projects-grid">
-        <div class="project-item" data-aos="zoom-in">
-            <h3>Simple Login Form</h3>
-            <p>A basic HTML login form.</p>
-            <a href="proj1\activity2.html" class="view-btn" target="_blank">View Project</a>
+            <div class="projects-grid">
+                <div class="project-item" data-aos="zoom-in">
+                    <h3>Simple Login Form</h3>
+                    <p>A basic HTML login form.</p>
+                    <a href="proj1\activity2.html" class="view-btn" target="_blank">View Project</a>
+                </div>
+
+                <div class="project-item" data-aos="zoom-in" data-aos-delay="100">
+                    <h3>My Favorite Horror Movies of 2024</h3>
+                    <p>A simple HTML page listing favorite horror movies.</p>
+                    <a href="proj2\homepage.html" class="view-btn" target="_blank">View Project</a>
+                </div>
+
+                <div class="project-item" data-aos="zoom-in" data-aos-delay="200">
+                    <h3>Pawtify - Pet Management App</h3>
+                    <p>A mobile app built with Android Studio for pet owners to manage pet details and reminders.</p>
+                    <button onclick="openVideoPopup()" class="view-btn">Watch Demo</button>
+                </div>
+
+            </div>
+        </section>
+
+        <div id="myModal" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <video controls> <source src="proj2.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
         </div>
 
-        <div class="project-item" data-aos="zoom-in" data-aos-delay="100">
-            <h3>My Favorite Horror Movies of 2024</h3>
-            <p>A simple HTML page listing favorite horror movies.</p>
-            <a href="proj2\homepage.html" class="view-btn" target="_blank">View Project</a>
-        </div>
+        <style>
+            /* The Modal (background) */
+            .modal {
+              display: none; /* Hidden by default */
+              position: fixed; /* Stay in place */
+              z-index: 1000; /* Sit on top */
+              left: 0;
+              top: 0;
+              width: 100%; /* Full width */
+              height: 100%; /* Full height */
+              background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 
-         <div class="project-item" data-aos="zoom-in" data-aos-delay="200">
-            <h3>Pawtify - Pet Management App</h3>
-            <p>A mobile app built with Android Studio for pet owners to manage pet details and reminders.</p>
-            <button onclick="openVideoPopup()" class="view-btn">Watch Demo</button>
-        </div>
+              /* Centering the modal box - uses flexbox */
+              justify-content: center;
+              align-items: center;
 
-    </div>
-</section>
+              /* Fade-in animation */
+              opacity: 0;
+              transition: opacity 0.3s ease-in-out;
+            }
 
-<div id="myModal" class="modal">
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <video width="320" height="240" controls>
-      <source src="proj2.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-  </div>
-</div>
+            /* Class to show modal (added by JS) */
+            .modal.show {
+                opacity: 1;
+                display: flex; /* Activate flexbox centering when shown */
+            }
 
-<style>
-/* Style the Modal */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
+            /* Modal Content/Box */
+            .modal-content {
+              background-color: #fefefe;
+              margin: auto; /* Replaced 15% auto with just auto for flex centering */
+              padding: 20px;
+              border: 1px solid #888;
+              width: 80%; /* Maintain original width */
+              max-width: 600px; /* Added max-width to prevent it from getting too big */
+              max-height: 90vh; /* Added max-height to ensure it fits viewport height */
+              box-sizing: border-box; /* Include padding and border in the element's total width and height */
 
-/* Modal Content/Box */
-.modal-content {
-  background-color: #fefefe;
-  margin: 15% auto; /* 15% from the top and centered */
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
-}
+              /* For video centering inside the content box */
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              position: relative; /* For absolute positioning of close button */
 
-/* The Close Button */
-.close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
+              /* Added for square-like appearance as requested (you can adjust these values) */
+              aspect-ratio: 1 / 1; /* Makes it square, relative to its width */
+              border-radius: 15px; /* Rounded edges as requested */
+            }
 
-.close:hover,
-.close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
-}
-</style>
+            /* The Close Button */
+            .close {
+              color: #aaa;
+              position: absolute; /* Position relative to .modal-content */
+              top: 10px;
+              right: 20px;
+              font-size: 36px; /* Larger close button */
+              font-weight: bold;
+              cursor: pointer;
+              z-index: 1001; /* Ensure it's above the video */
+            }
 
-<script>
-// Get the modal
-var modal = document.getElementById("myModal");
+            .close:hover,
+            .close:focus {
+              color: black;
+              text-decoration: none;
+            }
 
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn");
+            /* Video Styling to fit and be centered */
+            .modal-content video {
+              width: 100%; /* Make video fit 100% width of its container */
+              height: auto; /* Maintain aspect ratio */
+              max-height: 100%; /* Ensure video fits vertically within the modal content */
+              display: block; /* Remove extra space below video */
+              object-fit: contain; /* Ensures the whole video is visible, letterboxing if necessary */
+            }
+        </style>
 
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+        <script>
+            // Get the modal
+            var modal = document.getElementById("myModal");
 
-// When the user clicks the button, open the modal
-function openVideoPopup() {
-  modal.style.display = "block";
-}
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
 
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
+            // When the user clicks the button, open the modal
+            function openVideoPopup() {
+              modal.style.display = "flex"; // Set display to flex immediately for centering
+              // Use a small delay before adding 'show' class to ensure display change registers for transition
+              setTimeout(function() {
+                modal.classList.add("show");
+              }, 10);
+            }
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-</script>
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+              modal.classList.remove("show"); // Remove 'show' class to trigger fade-out
+              // Hide completely after the transition is done
+              setTimeout(function() {
+                modal.style.display = "none";
+              }, 300); // This duration should match your CSS transition time
+            }
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+              if (event.target == modal) {
+                modal.classList.remove("show"); // Remove 'show' class to trigger fade-out
+                setTimeout(function() {
+                  modal.style.display = "none";
+                }, 300); // This duration should match your CSS transition time
+              }
+            }
+        </script>
+
 
         <div class="section-divider-wavy" data-aos="fade-down" data-aos-duration="800" data-aos-delay="800"></div>
 
         <section id="contact" class="section contact-section" data-aos="fade-up">
-    <h2 class="section-title">Get in Touch</h2>
-    <div class="contact-card">
-        <p>I'm always open to new opportunities, collaborations, or just a friendly chat. Feel free to reach out!</p>
+            <h2 class="section-title">Get in Touch</h2>
+            <div class="contact-card">
+                <p>I'm always open to new opportunities, collaborations, or just a friendly chat. Feel free to reach out!</p>
 
-        <div class="contact-info">
-            <p><i class="fas fa-envelope"></i> tamormc@students.nu-moa.edu.ph</p>
-            <p><i class="fas fa-phone"></i> +63 912 345 6789</p>
-            <p><i class="fas fa-map-marker-alt"></i> Quezon City, Metro Manila, Philippines</p>
-        </div>
+                <div class="contact-info">
+                    <p><i class="fas fa-envelope"></i> tamormc@students.nu-moa.edu.ph</p>
+                    <p><i class="fas fa-phone"></i> +63 912 345 6789</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Quezon City, Metro Manila, Philippines</p>
+                </div>
 
-        <div class="social-contact-links">
-            <a href="#" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-            <a href="#" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <div class="social-contact-links">
+                    <a href="#" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                </div>
+
+                <a href="mailto:tamormc@students.nu-moa.edu.ph" class="contact-card-cta">
+                    Let's Connect <i class="fas fa-arrow-right"></i>
+                </a>
             </div>
-
-        <a href="mailto:tamormc@students.nu-moa.edu.ph" class="contact-card-cta">
-            Let's Connect <i class="fas fa-arrow-right"></i>
-        </a>
-    </div>
-</section>
+        </section>
     </main>
 
     <footer class="main-footer">
@@ -310,6 +357,9 @@ window.onclick = function(event) {
             duration: 800,
             easing: 'ease-out-quart'
         });
+
+        // Current year for footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
     </script>
 </body>
 </html>
