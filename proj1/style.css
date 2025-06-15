@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    /* Instead of fixed height: 100vh, we'll allow content to dictate height */
+    min-height: 100vh; /* Ensures body is at least full height */
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: flex-start; /* Aligns content to the top instead of center */
+    font-family: 'Segoe UI', sans-serif;
+    background-image: url('BG2.jpg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; /* Changed back to cover for a full background, adjust if needed */
+    background-position: center;
+    /* Add padding to ensure space around the form, especially at the top/bottom */
+    padding: 20px 0; /* 20px top/bottom, 0 left/right */
+    box-sizing: border-box; /* Include padding in the element's total height */
+}
+
+.form-box {
+    background: white;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    width: 100%;
+    max-width: 500px; /* You can adjust this value to make the form narrower if desired, e.g., 400px */
+    margin-top: 0px; /* Reset any default top margin */
+    margin-bottom: 0px; /* Reset any default bottom margin */
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #EE740A;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #444;
+}
+
+input,
+input::placeholder,
+select {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 10px;
+    border: 3px solid #ccc;
+    font-size: 14px;
+}
+
+.gender-group {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.gender-group label {
+    font-weight: normal;
+}
+
+.terms {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 600px) {
+    .form-box {
+        padding: 20px;
+    }
+    body {
+        /* On smaller screens, allow scrolling if content overflows */
+        overflow-y: auto;
+    }
+}

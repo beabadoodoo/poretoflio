@@ -1,0 +1,89 @@
+body {
+margin: 0;
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+font-family: 'Segoe UI', sans-serif;
+background-image:
+url(BG2.jpg.jpg);
+background-size: cover;
+background-position: bottom;
+}
+
+.form-box
+.form-box {
+background: white;
+padding: 30px 40px;
+border-radius: 12px;
+box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+width: 100%;
+max-width: 500px;
+}
+
+h2 {
+text-align: center;
+margin-bottom: 25px;
+color: #ee740af0;
+}
+
+label {
+display: block;
+margin-top: 15px;
+font-weight: bold;
+color: #444;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="date"],
+select {
+width: 100%;
+padding: 10px;
+margin-top: 5px;
+border-radius: 10px;
+border: 3px solid #ccc;
+font-size: 14px;
+}
+
+.gender-group {
+display: flex;
+gap: 15px;
+margin-top: 10px;
+}
+
+.gender-group label {
+font-weight: normal;
+}
+
+.terms {
+display: flex;
+align-items: center;
+margin-top: 15px;
+font-size: 14px;
+}
+
+button {
+width: 100%;
+margin-top: 20px;
+padding: 12px;
+background-color: #007bff;
+color: white;
+border: none;
+font-size: 16px;
+border-radius: 8px;
+cursor: pointer;
+transition: background 0.3s ease;
+}
+
+button:hover {
+background-color: #0056b3;
+}
+
+@media (max-width: 600px) {
+    .form-box {
+    padding: 20px;
+    }
+}

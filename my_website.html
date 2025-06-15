@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Ma. Janelle Anne C. Tamor's Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="header-left">
+            <span class="initial">M</span> <span class="name">Janelle Anne</span>
+            <span class="tag">Personal</span>
+        </div>
+        <nav class="main-nav" id="mainNav">
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <div class="header-right">
+            <button class="btn-talk" id="toggle-dark">
+                <i class="fas fa-moon"></i> Dark Mode
+            </button>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <main class="content-area">
+        <section class="hero-section">
+            <canvas id="hero-particles-canvas"></canvas> <div class="hero-content">
+                <p class="greeting" data-aos="fade-right" data-aos-easing="ease-in-out" data-aos-duration="600">Hello Welcome</p>
+                <h1 class="hero-title" data-aos="fade-right" data-aos-delay="100" data-aos-easing="ease-in-out" data-aos-duration="800">
+                    I'm <span class="highlight">Ma. Janelle Anne</span> <br> Aspiring IT Professional
+                </h1>
+                <div class="hero-buttons" data-aos="fade-right" data-aos-delay="200" data-aos-easing="ease-in-out" data-aos-duration="700">
+                    <button class="btn primary-btn">Hire Me</button>
+                    <button class="btn secondary-btn">See Portfolio</button>
+                </div>
+                <p class="hero-description" data-aos="fade-right" data-aos-delay="300" data-aos-easing="ease-in-out" data-aos-duration="600">
+                    I am exploring different areas within Information Technology to grow and contribute meaningfully in the tech industry.
+                </p>
+                <div class="follow-me" data-aos="fade-right" data-aos-delay="400" data-aos-easing="ease-in-out" data-aos-duration="500">
+                    <span>Follow Me:</span>
+                    <a href="https://www.facebook.com/profile.php?id=61576782034458" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.linkedin.com/in/ma-janelle-anne-tamor-9336b0308/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://instagram.com/yourusername" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="mailto:your.email@example.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="hero-image-stats" data-aos="fade-left" data-aos-easing="ease-in-out" data-aos-duration="800">
+                <div class="profile-blob">
+                    <img src="myphoto.jpg.jpeg" alt="Ma. Janelle Anne C. Tamor" class="profile-img">
+                </div>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <span>2+</span>
+                        <p>Years of <br> Experience</p>
+                    </div>
+                    <div class="stat-item">
+                        <span>100%</span>
+                        <p>Success <br> Rate</p>
+                    </div>
+                    <div class="stat-item">
+                        <span>10+</span>
+                        <p>Completed <br> Projects</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider-wavy" data-aos="fade-down" data-aos-duration="800"></div>
+
+        <section id="about" class="section what-i-do-section">
+            <h2 class="section-title" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="700">What do I help</h2>
+            <p class="section-description" data-aos="fade-up" data-aos-delay="100" data-aos-easing="ease-in-out" data-aos-duration="600">
+                My journey in IT has allowed me to explore various facets of technology. While I started with an interest in web development,
+                I'm actively seeking new challenges and areas where I can apply my growing knowledge.
+            </p>
+            <div class="service-cards-container">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200" data-aos-easing="ease-in-out" data-aos-duration="700">
+                    <div class="icon-circle"><i class="fas fa-code"></i></div>
+                    <h3>Web Development Basics</h3>
+                    <p>I have foundational knowledge in creating web interfaces using HTML, CSS, and JavaScript. I enjoy building clean and responsive designs.</p>
+                    <a href="#" class="service-link" aria-label="Learn more about Web Development Basics"><i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300" data-aos-easing="ease-in-out" data-aos-duration="700">
+                    <div class="icon-circle"><i class="fas fa-lightbulb"></i></div>
+                    <h3>Problem Solving & Logic</h3>
+                    <p>I apply logical thinking to solve problems and understand complex systems, a skill valuable in any IT role.</p>
+                    <a href="#" class="service-link" aria-label="Learn more about Problem Solving & Logic"><i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider-wavy" data-aos="fade-down" data-aos-duration="800" data-aos-delay="200"></div>
+
+        <section id="education" class="section education-section">
+            <h2 class="section-title" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="700">My Education</h2>
+            <div class="education-grid">
+                <div class="education-item" data-aos="fade-up" data-aos-delay="100" data-aos-easing="ease-in-out" data-aos-duration="700">
+                    <img src="NU_Logo-.jpg" alt="National University Logo">
+                    <div class="edu-details">
+                        <h3>NATIONAL UNIVERSITY MOA</h3>
+                        <p>Bachelor of Science in Information Technology (Mobile and Web Application)</p>
+                        <span>2019 – 2023</span>
+                    </div>
+                </div>
+                <div class="education-item" data-aos="fade-up" data-aos-delay="200" data-aos-easing="ease-in-out" data-aos-duration="700">
+                    <img src="STI_LOGO.jpg" alt="STI College Logo">
+                    <div class="edu-details">
+                        <h3>STI COLLEGE BACOOR</h3>
+                        <p>Senior High School (STEM - Science Technology Engineering Mathematics)</p>
+                        <span>2019 – 2023</span>
+                    </div>
+                </div>
+                <div class="education-item" data-aos="fade-up" data-aos-delay="300" data-aos-easing="ease-in-out" data-aos-duration="700">
+                    <img src="SDCA_LOGO.jpg" alt="St. Dominic College of Asia Logo">
+                    <div class="edu-details">
+                        <h3>St. Dominic College of Asia</h3>
+                        <p>High School - Junior High School</p>
+                        <span>2013 – 2017</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider-wavy" data-aos="fade-down" data-aos-duration="800" data-aos-delay="400"></div>
+
+        <section id="skills" class="section skills-section">
+            <h2 class="section-title" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="700">My Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-item" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="600" data-skill-level="90">
+                    <i class="fab fa-html5 skill-icon"></i>
+                    <p>HTML</p>
+                </div>
+                <div class="skill-item" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="600" data-skill-level="85">
+                    <i class="fab fa-css3-alt skill-icon"></i>
+                    <p>CSS</p>
+                </div>
+                <div class="skill-item" data-aos="zoom-in" data-aos-delay="300" data-aos-duration="600" data-skill-level="70">
+                    <i class="fab fa-js-square skill-icon"></i>
+                    <p>JavaScript</p>
+                </div>
+                <div class="skill-item" data-aos="zoom-in" data-aos-delay="400" data-aos-duration="600" data-skill-level="95">
+                    <i class="fas fa-paint-brush skill-icon"></i>
+                    <p>Canva</p>
+                </div>
+                <div class="skill-item" data-aos="zoom-in" data-aos-delay="500" data-aos-duration="600" data-skill-level="80">
+                    <i class="fas fa-video skill-icon"></i>
+                    <p>Video Editing</p>
+                </div>
+                <div class="skill-item" data-aos="zoom-in" data-aos-delay="600" data-aos-duration="600" data-skill-level="60">
+                    <i class="fas fa-robot skill-icon"></i>
+                    <p>Automation</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider-wavy" data-aos="fade-down" data-aos-duration="800" data-aos-delay="600"></div>
+
+        <section id="projects" class="section projects-section" data-aos="fade-up">
+    <h2 class="section-title">My Projects</h2>
+    <p class="section-description">
+        Here are some of my projects.
+    </p>
+
+    <div class="projects-grid">
+        <div class="project-item" data-aos="zoom-in">
+            <h3>Simple Login Form</h3>
+            <p>A basic HTML login form.</p>
+            <a href="proj1\activity2.html" class="view-btn" target="_blank">View Project</a>
+        </div>
+
+        <div class="project-item" data-aos="zoom-in" data-aos-delay="100">
+            <h3>My Favorite Horror Movies of 2024</h3>
+            <p>A simple HTML page listing favorite horror movies.</p>
+            <a href="proj2\homepage.html" class="view-btn" target="_blank">View Project</a>
+        </div>
+
+         <div class="project-item" data-aos="zoom-in" data-aos-delay="200">
+            <h3>Pawtify - Pet Management App</h3>
+            <p>A mobile app built with Android Studio for pet owners to manage pet details and reminders.</p>
+            <button onclick="openVideoPopup()" class="view-btn">Watch Demo</button>
+        </div>
+
+    </div>
+</section>
+
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <video width="320" height="240" controls>
+      <source src="proj2.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</div>
+
+<style>
+/* Style the Modal */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+</style>
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal
+function openVideoPopup() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+        <div class="section-divider-wavy" data-aos="fade-down" data-aos-duration="800" data-aos-delay="800"></div>
+
+        <section id="contact" class="section contact-section" data-aos="fade-up">
+    <h2 class="section-title">Get in Touch</h2>
+    <div class="contact-card">
+        <p>I'm always open to new opportunities, collaborations, or just a friendly chat. Feel free to reach out!</p>
+
+        <div class="contact-info">
+            <p><i class="fas fa-envelope"></i> tamormc@students.nu-moa.edu.ph</p>
+            <p><i class="fas fa-phone"></i> +63 912 345 6789</p>
+            <p><i class="fas fa-map-marker-alt"></i> Quezon City, Metro Manila, Philippines</p>
+        </div>
+
+        <div class="social-contact-links">
+            <a href="#" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            </div>
+
+        <a href="mailto:tamormc@students.nu-moa.edu.ph" class="contact-card-cta">
+            Let's Connect <i class="fas fa-arrow-right"></i>
+        </a>
+    </div>
+</section>
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; <span id="current-year"></span> Ma. Janelle Anne C. Tamor. All rights reserved.</p>
+        <div class="footer-wave"></div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+            duration: 800,
+            easing: 'ease-out-quart'
+        });
+    </script>
+</body>
+</html>
